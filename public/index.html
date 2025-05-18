@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restorative Hair Mask</title>
+</head>
+<link rel="stylesheet" href="../src/styles/main.scss" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../src/assets/images/logo.svg">
+    </div>
+    <nav class="nav-links">
+      <a href="#">Shop</a>
+      <a href="#">Science</a>
+      <a href="#">Press</a>
+      <a href="#">Blogs</a>
+      <a href="#">Tutorial</a>
+    </nav>
+    <div class="icons">
+      <span>🔍</span>
+      <span>👤</span>
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="product-row">
+      <div class="product-images">
+        <img src="../src/assets/images/product-desktop.png" alt="Restorative Hair Mask" />
+        <div class="accordion accordion--centered">
+          <div class="accordion-item">
+            <button class="accordion-toggle">Ingredients</button>
+            <div class="accordion-content">Lorem ipsum dolor sit amet...</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-toggle">Ingredients</button>
+            <div class="accordion-content">Other content...</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-toggle">Ingredients</button>
+            <div class="accordion-content">More content...</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-details">
+        <p class="breadcrumbs">All Products / Haircare / Restorative Hair Mask</p>
+        <h1>Restorative Hair Mask</h1>
+        <p class="subtitle">Nourishment in a bottle</p>
+        <hr class="section-divider">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+        <div class="badges">
+          <span><img src="../src/assets/images/organic-icon.svg" alt="Organic" />100% ORGANIC</span>
+          <span><img src="../src/assets/images/organic-icon.svg" alt="Organic" />100% ORGANIC</span>
+          <span><img src="../src/assets/images/organic-icon.svg" alt="Organic" />100% ORGANIC</span>
+          <span><img src="../src/assets/images/organic-icon.svg" alt="Organic" />100% ORGANIC</span>
+        </div>
+        <hr class="section-divider">
+        <div class="purchase-options">
+          
+          <label><input type="radio" name="purchase" checked> Buy Once | $38</label><br>
+          <label><input type="radio" name="purchase"> Subscribe (SAVE 20%) | $30</label>
+        </div>
+        <div class="quantity-add">
+          <div class="quantity-box">
+            <button type="button">-</button>
+            <input type="number" value="1" min="1" />
+            <button type="button">+</button>
+          </div>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="app"></div> <!-- Placeholder for the carousel -->
+
+  <script type="module">
+    import { initAccordion } from '../src/utils/accordion.js';
+    import { renderCarousel } from '../src/components/Carousel.js';
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initAccordion();
+      renderCarousel(); // Render the carousel dynamically
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+  color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.site-header .logo {
+  font-weight: bold;
+}
+
+.site-header .nav-links a {
+  color: inherit;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.site-header .icons span {
+  margin-left: 10px;
+}
+
+.product-page {
+  flex-wrap: wrap;
+  padding: 40px;
+  display: flex;
+}
+
+.product-page .product-images {
+  text-align: center;
+  flex: 1;
+}
+
+.product-page .product-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-page .product-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-page .product-details .breadcrumbs {
+  color: #999;
+  font-size: .8rem;
+}
+
+.product-page .product-details h1 {
+  margin: 0;
+}
+
+.product-page .product-details .subtitle {
+  font-weight: bold;
+}
+
+.product-page .product-details .description {
+  margin: 20px 0;
+}
+
+.product-page .product-details .badges span {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: .8rem;
+  display: inline-block;
+}
+
+.product-page .product-details .purchase-options {
+  margin: 20px 0;
+}
+
+.product-page .product-details .quantity-add {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.product-page .product-details .quantity-add input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+.product-page .product-details .quantity-add button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #a18c8c;
+  border: none;
+  padding: 10px 20px;
+}
+
+.product-page .product-details .quantity-add #cart-animation {
+  color: green;
+  font-weight: bold;
+  transition: opacity .3s;
+}
+
+.product-page .product-details .quantity-add #cart-animation.hidden {
+  opacity: 0;
+}
+
+.product-page .product-details .accordion .accordion-item {
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.product-page .product-details .accordion .accordion-item .accordion-toggle {
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.product-page .product-details .accordion .accordion-item .accordion-content {
+  color: #666;
+  padding: 10px 0;
+  display: none;
+}
+
+.carousel {
+  padding: 20px;
+}
+
+.carousel h2 {
+  margin-bottom: 10px;
+}
+
+.carousel .carousel-track {
+  gap: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.carousel .carousel-track .item {
+  text-align: center;
+  min-width: 150px;
+}
+
+.carousel .carousel-track .item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel-track .item p {
+  margin-top: 5px;
+  font-size: .9rem;
+}
+/*# sourceMappingURL=public.d91c94e1.css.map */
